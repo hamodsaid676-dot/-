@@ -1,0 +1,85 @@
+{
+  "id": "com.alfurqan.quran.app",
+  "name": "تطبيق الفرقان - القرآن الكريم",
+  "short_name": "الفرقان",
+  "description": "تطبيق الفرقان الشامل للقرآن الكريم، التفسير الميسر، آيات القنوت، وتذكير الصلاة على النبي وآله",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "orientation": "portrait",
+  "background_color": "#0F382C",
+  "theme_color": "#0F382C",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": [
+    "education",
+    "lifestyle",
+    "books"
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "shortcuts": [
+    {
+      "name": "القرآن الكريم",
+      "short_name": "المصحف",
+      "description": "الانتقال المباشر للمصحف الشريف",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192-maskable.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-narrow.png",
+      "type": "image/png",
+      "sizes": "540x960",
+      "form_factor": "narrow",
+      "label": "الواجهة الرئيسية لتطبيق الفرقان"
+    },
+    {
+      "src": "/screenshot-wide.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "label": "عرض الشاشة العريضة"
+    }
+  ]
+}

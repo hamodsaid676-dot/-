@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "video": {
+      "title": "Video",
+      "description": "A video project",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string", "enum": ["generating", "completed"] },
+        "progress": { "type": "number" },
+        "resolution": { "type": "string" },
+        "style": { "type": "string" },
+        "cameraMovement": { "type": "string" },
+        "createdAt": { "type": "number" },
+        "imageUrl": { "type": "string" },
+        "isPublished": { "type": "boolean" },
+        "prompt": { "type": "string" },
+        "author": { "type": "string" }
+      },
+      "required": ["id", "title", "status", "progress", "resolution"]
+    }
+  },
+  "firestore": {
+    "/videos/{videoId}": {
+      "schema": { "$ref": "video" },
+      "description": "Collection of all videos"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+name: al_furqan_tafsir
+description: "Al-Furqan Offline Tafsir App for Android. Reading, unpacking and caching tafsir.json.gz from archive."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  archive: ^3.3.7
+  path_provider: ^2.1.1
+  cupertino_icons: ^1.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/tafsir.json.gz

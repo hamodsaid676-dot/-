@@ -1,0 +1,8 @@
+{
+  "name": "تطبيق الفرقان - أندرويد (Kotlin)",
+  "description": "تطبيق أندرويد شاشة واحدة بلغة كوتلن (Kotlin & Jetpack Compose) للقرآن الكريم، السبحة الإلكترونية، وأدعية القنوت",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Uthman Taha';
+  src: url('https://cdn.jsdelivr.net/gh/Quran-Com/quran-fonts@master/v1/woff2/UthmanicHafs.woff2') format('woff2'),
+       url('https://quran.ksu.edu.sa/fonts/UthmanicHafs.ttf') format('truetype');
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-uthman: "Uthman Taha", "Amiri Quran", "Amiri", serif;
+  --font-quran: "Amiri Quran", "Amiri", serif;
+  --font-scheherazade: "Scheherazade New", serif;
+  --font-naskh: "Noto Naskh Arabic", serif;
+  --font-kufi: "Reem Kufi", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-emerald: #0F382C;
+  --color-brand-gold: #D4AF37;
+  --color-brand-cream: #FAF7F2;
+  --color-brand-sand: #F3EFE6;
+}
+
+.font-quran-uthman {
+  font-family: "Uthman Taha", "KFGQPC Uthman Taha Script", "Amiri Quran", "Amiri", serif;
+}
+
+.font-quran-amiri {
+  font-family: "Amiri Quran", "Amiri", serif;
+}
+
+.font-quran-scheherazade {
+  font-family: "Scheherazade New", serif;
+}
+
+.font-quran-naskh {
+  font-family: "Noto Naskh Arabic", serif;
+}
+
+.font-quran-kufi {
+  font-family: "Reem Kufi", sans-serif;
+}
+
+/* Custom Scrollbar for organic manuscript look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 9999px;
+  opacity: 0.7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0F382C;
+}
+
+/* Custom fade up transition animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Pulse glow for active reading verse */
+@keyframes activeVerseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.7);
+  }
+}
+
+.active-verse-highlight {
+  animation: activeVerseGlow 2s infinite ease-in-out;
+}
